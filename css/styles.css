@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #eef2f6;
+  --bg-accent: #dfe8f2;
+  --surface: #ffffff;
+  --text: #1a2332;
+  --text-muted: #5a6577;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --header-start: #0f766e;
+  --header-end: #134e4a;
+  --header-text: #f0fdfa;
+  --footer: #1a2332;
+  --footer-text: #cbd5e1;
+  --border: #d8e0ea;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at top left, var(--bg-accent), transparent 55%),
+    radial-gradient(ellipse at bottom right, #e8f5f2, transparent 50%),
+    var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: linear-gradient(135deg, var(--header-start), var(--header-end));
+  color: var(--header-text);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header p {
+  color: #99f6e4;
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(26, 35, 50, 0.06);
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.project {
+  margin: 24px 0 0;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.project figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  background: var(--footer);
+  color: var(--footer-text);
+  font-size: 0.9rem;
+}
